@@ -55,7 +55,7 @@ if (Confirm-ExistAndVersion git 2.39) {
 }
 else {
     Write-Host "Git: ... installing!"
-    winget install --id Git.Git --scope machine -e -s winget --accept-source-agreements --accept-package-agreements
+    winget install --id Git.Git -e -s winget --accept-source-agreements --accept-package-agreements
 }
 
 ###################################################################################
