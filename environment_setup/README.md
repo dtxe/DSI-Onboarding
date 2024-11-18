@@ -32,9 +32,7 @@ This script will check whether course pre-requisites are installed and will inst
 3. Press Enter to run.
 
 ```powershell
-Invoke-WebRequest https://github.com/UofT-DSI/Onboarding/raw/main/environment_setup/autoinstall_windows.ps1 -out autoinstall_windows.ps1
-.\autoinstall_windows.ps1
-
+powershell -ExecutionPolicy ByPass -c "irm https://github.com/dtxe/DSI_Onboarding/raw/refs/heads/main/environment_setup/autoinstall_windows.ps1 | iex"
 ```
 
 ### Manual installation
